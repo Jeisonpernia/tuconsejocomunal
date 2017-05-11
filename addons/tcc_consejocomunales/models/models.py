@@ -50,7 +50,7 @@ class partner(osv.osv):
     def create(self, cr, uid, vals, context=None):
         vals.update({
             'name':vals['name'].upper(),
-            'ubicacion':vals['ubicacion'].upper(),
+            #~ 'ubicacion':vals['ubicacion'].upper(),
             })
         return super(partner, self).create(cr, uid, vals, context=context)
     

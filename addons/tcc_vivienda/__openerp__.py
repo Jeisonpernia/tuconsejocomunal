@@ -24,11 +24,11 @@
     # always loaded
     'data': [
         # 'security/ir.model.access.csv',
-        'vistas/vivienda_view.xml',
-        'vistas/casas_view.xml',
-        'vistas/edificios_view.xml',
-        'vistas/callesoavenidas_view.xml',
-        'vistas/sectores_view.xml',
+        'views/vivienda_view.xml',
+        'views/casas_view.xml',
+        'views/edificios_view.xml',
+        'views/callesoavenidas_view.xml',
+        'views/sectores_view.xml',
     ],
     # only loaded in demonstration mode
     'demo': [

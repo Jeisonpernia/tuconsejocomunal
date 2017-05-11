@@ -9,8 +9,11 @@ class tcc_personas(osv.osv):
 	_columns={
 		'is_persona': fields.boolean('Persona'),
 		'consejocomunal_id': fields.many2one('tcc.consejocomunales','Consejo Comunal',required=True),
-		'familia_id': fields.many2one('tcc_familia.tcc_familia','Nombre del Grupo Familiar',required=True),
-		'cedula': fields.integer('Cedula',required=True),
+        'familia_id': fields.many2one(
+                            'tcc_familia.tcc_familia',
+                            'Nombre del Grupo Familiar',),
+		#~ 'familia_id': fields.many2one('tcc_familia.tcc_familia','Nombre del Grupo Familiar',required=True),
+		'cedula': fields.integer('Cédula',required=True),
 		's_nombre': fields.char('Segundo Nombre'),
 		'p_apellido': fields.char('Primer Apellido'),
 		's_apellido': fields.char('Segundo Apellido'),

@@ -6,13 +6,15 @@
             <field name="type">form</field>
             <field name="arch" type="xml">
                 <form string="Registro">
-                    <group>             
-                            <field name="consejocomunal_id" style="width:80%"/>
-                            <field name="casas_ids" style="width:80%"/>
-                            <field name="edificios_ids" style="width:80%"/>
+                    <sheet>
+                        <group>             
+                            <field name="consejocomunal_id" />
+                            <field name="casas_ids" />
+                            <field name="edificios_ids" />
                             <field name="active"/>
                         
-                    </group>
+                        </group>
+                    </sheet>
                 </form>
             </field>
         </record>
