@@ -13,7 +13,7 @@ class tcc_personas(osv.osv):
                             'tcc_familia.tcc_familia',
                             'Nombre del Grupo Familiar',),
 		#~ 'familia_id': fields.many2one('tcc_familia.tcc_familia','Nombre del Grupo Familiar',required=True),
-		'cedula': fields.integer('Cédula',required=True),
+		'cedula': fields.integer('Cédula'),
 		's_nombre': fields.char('Segundo Nombre'),
 		'p_apellido': fields.char('Primer Apellido'),
 		's_apellido': fields.char('Segundo Apellido'),

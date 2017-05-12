@@ -10,7 +10,7 @@
                 <sheet>
                     <group>
                         <field name="name" />
-                        
+                        <field name="login" />
                     </group>
                     <group col="4">
                         <field name="rif" placeholder="C-00000000-0" data-inputmask="'mask': 'C-9999999-9'"/>
@@ -18,19 +18,25 @@
                         <field name="estado_id" 
                             on_change="limpiar_campos('estado')"
                             options="{'no_create': True}"/>
-                        <field name="fecha" 
-                            on_change="on_change_validate_date(fecha)"
-                            options="{'no_create': True}"/>
+                        <field name="phone" />
+                        
                         <field 
                             name="municipio_id" 
                             domain="[('estado_id','=',estado_id)]"
                             on_change="limpiar_campos('municipio')"
                             options="{'no_create': True}"/>
-                        <field name="active"/>
+                        <field name="fecha" 
+                            on_change="on_change_validate_date(fecha)"
+                            options="{'no_create': True}"/>
+                        
                         <field name="parroquia_id" domain="[('municipio_id','=',municipio_id)]"/>
+                        <field name="active"/>
                     </group>
-                    <group>
-                        <field name="ubicacion" placeholder = "Sector, Calle, Casa/Apto."/>
+                    <group col="4">
+                        <field name="sector"/>
+                        <field name="calle_av"/>
+                        <field name="casa_edif"/>
+                        <field name="piso_apart"/>
                     </group>
                 </sheet>
             </form>

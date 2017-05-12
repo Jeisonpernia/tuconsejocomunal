@@ -22,8 +22,10 @@
 
     # always loaded
     'data': [
-        # 'security/ir.model.access.csv',
-        'vistas/consejocomunal_views.xml',
+        'views/consejocomunal_views.xml',
+        'security/ir.model.access.csv',
+        'security/filter_users_rule.xml',
+        
     ],
     # only loaded in demonstration mode
     'demo': [
