@@ -1,0 +1,4 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_tcc_personas_tcc_personas_vocero,tcc.personas,model_tcc_personas,tcc_noticias.group_tcc_vocero,1,1,1,0
+access_tcc_personas_tcc_users_vocero,res.users,base.model_res_users,tcc_noticias.group_tcc_vocero,1,1,1,0
+access_tcc_personas_tcc_partner_vocero,res.partner,model_res_partner,tcc_noticias.group_tcc_vocero,1,1,1,0

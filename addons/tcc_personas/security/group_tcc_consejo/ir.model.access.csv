@@ -1,0 +1,9 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_tcc_personas_tcc_personas_consejo,tcc.personas,model_tcc_personas,tcc_noticias.group_tcc_consejo,1,1,1,0
+access_tcc_personas_tcc_users_consejo,res.users,base.model_res_users,tcc_noticias.group_tcc_consejo,1,1,1,0
+access_tcc_personas_tcc_partner_consejo,res.partner,model_res_partner,tcc_noticias.group_tcc_consejo,1,1,1,0
+access_tcc_personas_tcc_mail_consejo,mail.thread,mail.model_mail_thread,tcc_noticias.group_tcc_consejo,1,1,1,0
+access_tcc_personas_res_estado_consejo,res.estados,usuarios_venezuela.model_res_estados,tcc_noticias.group_tcc_consejo,1,0,0,0
+access_tcc_personas_res_municipio_consejo,res.municipios,usuarios_venezuela.model_res_municipios,tcc_noticias.group_tcc_consejo,1,0,0,0
+access_tcc_personas_res_parroquias_consejo,res.parroquias,usuarios_venezuela.model_res_parroquias,tcc_noticias.group_tcc_consejo,1,0,0,0
+access_tcc_personas_mail_massage_consejo,mail.message,mail.model_mail_message,tcc_noticias.group_tcc_consejo,1,0,0,0

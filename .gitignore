@@ -89,4 +89,10 @@ ENV/
 
 # Rope project settings
 .ropeproject
+
+# file 
 *.csv#
+.~*
+.*
+!.gitignore
+!.mailmap

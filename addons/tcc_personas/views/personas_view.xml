@@ -1,0 +1,70 @@
+<?xml version="1.0"?>
+<openerp>
+    <data>
+       <record model="ir.ui.view" id="view_tcc_personas_form">
+            <field name="name">Personas</field>
+            <field name="model">tcc.personas</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <form string="Registro">
+                    <sheet>
+                        <group col="4">
+                            <field name='consejocomunal_id' options="{'no_create':True}"/>
+                            <field name='familia_id'/>
+                            <field string="Correo electrónico" name='login' on_change="base.on_change_login(login)"/>
+                            <field name='cedula' placeholder="12345678"/>
+                            <field name='name' string= "Primer nombre"/>
+                            <field name='s_nombre'/>
+                            <field name='p_apellido'/>
+                            <field name='s_apellido'/>
+                            <field name='estado_civil'/>
+                            <field name='estado_id'/>
+                            <field name='sexo'/>
+                            <field name='municipio_id'/>
+                            <field name='nacionalidad'/>
+                            <field name='parroquia_id'/>
+                            <field name='fecha_nacimiento'/>
+                            <field name="telefono" placeholder="0212-1234567" data-inputmask="'mask': '9999-9999999'"/>
+                            <field name='active'/>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="view_tcc_personas_tree">
+            <field name="name">Personas</field>
+            <field name="model">tcc.personas</field>
+            <field name="type">tree</field>
+            <field name="arch" type="xml">
+                <tree string="persona">
+                     <field name='consejocomunal_id' />
+                        <field name='familia_id'/>
+                        <field name='login'/>
+                        <field name='name'/>
+                        <field name='p_apellido'/>
+                        <field name='sexo'/>
+                </tree>
+            </field>
+        </record>
+
+        <record model="ir.actions.act_window" id="action_tcc_personas">
+            <field name="name">Persona</field>
+            <field name="res_model">tcc.personas</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <field name="help" type="html">
+                <p class="oe_view_nocontent_create">
+                    Dale Click para crear una persona Perteneciente a una familia inscrita en el Consejo comunal
+                </p>
+
+            </field>
+        </record>
+
+        <menuitem name="Configuracion de personas" parent="tcc_consejo_comunales.tcc_consejocomunal_horizontal_menu" 
+           id="tcc_personas_horizontal_menu" 
+           sequence="5" 
+           />
+        <menuitem name="Personas" parent="tcc_personas_horizontal_menu" action="action_tcc_personas" id="menu_registro" sequence="10"/>
+    </data>
+</openerp>

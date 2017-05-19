@@ -8,7 +8,7 @@
                 <form string="Registro">
                     <sheet>
                         <group>             
-                            <field name="consejocomunal_id" />
+                            <field name="consejocomunal_id" options="{'no_create': True}"/>
                             <field name="casas_ids" />
                             <field name="edificios_ids" />
                             <field name="active"/>
@@ -44,7 +44,7 @@
             </field>
         </record>
 
-        <menuitem name="Gestion de Viviendas" parent="tcc_consejocomunales.tcc_consejocomunal_horizontal_menu" 
+        <menuitem name="Gestion de Viviendas" parent="tcc_consejo_comunales.tcc_consejocomunal_horizontal_menu" 
            id="tcc_viviendas_horizontal_menu" 
            sequence="5" 
            />

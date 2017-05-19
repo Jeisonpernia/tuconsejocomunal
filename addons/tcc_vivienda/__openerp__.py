@@ -19,16 +19,18 @@
     'version': '0.1',
 
     # any module necessary for this one to work correctly
-    'depends': ['base','tcc_consejocomunales'],
+    'depends': ['base','tcc_consejo_comunales'],
 
     # always loaded
     'data': [
-        # 'security/ir.model.access.csv',
+        
         'views/vivienda_view.xml',
         'views/casas_view.xml',
         'views/edificios_view.xml',
         'views/callesoavenidas_view.xml',
         'views/sectores_view.xml',
+        'security/ir.model.access.csv',
+        'security/filter_users_rule.xml',
     ],
     # only loaded in demonstration mode
     'demo': [

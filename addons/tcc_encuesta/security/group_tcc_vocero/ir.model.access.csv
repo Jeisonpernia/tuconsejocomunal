@@ -1,0 +1,2 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_tcc_familia_tcc_survey_vocero,survey.survey,model_survey_survey,tcc_noticias.group_tcc_vocero,1,0,0,0

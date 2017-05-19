@@ -20,18 +20,18 @@
     'version': '0.1',
 
     # any module necessary for this one to work correctly
-    'depends': ['base'],
+    'depends': ['base','tcc_consejo_comunales'],
 
     # always loaded
     'data': [
-        # 'security/ir.model.access.csv',
+        'views/noticias_views.xml',        
         'security/groups.xml',
         'security/group_tcc_consejo/ir.model.access.csv',
         'security/group_tcc_residentes/ir.model.access.csv',
         'security/group_tcc_vocero/ir.model.access.csv',
-        'security/public/ir.model.access.csv',
-        'templates.xml',
-        'views/noticias_views.xml',        
+        'security/filter_users_rule.xml',
+        #~ 'templates.xml',
+        
     ],
     # only loaded in demonstration mode
     'demo': [

@@ -19,12 +19,15 @@
     'version': '0.1',
 
     # any module necessary for this one to work correctly
-    'depends': ['base','survey','tcc_consejocomunales'],
+    'depends': ['base','survey','tcc_consejo_comunales'],
 
     # always loaded
     'data': [
-        # 'security/ir.model.access.csv',
-         'vistas/survey_survey.xml'
+        'views/survey_survey.xml',
+        'security/group_tcc_consejo/ir.model.access.csv',
+        'security/group_tcc_residentes/ir.model.access.csv',
+        'security/group_tcc_vocero/ir.model.access.csv',
+        'security/filter_users_rule.xml',
          
     ],
     # only loaded in demonstration mode

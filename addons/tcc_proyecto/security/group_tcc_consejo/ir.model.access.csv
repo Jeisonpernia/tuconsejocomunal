@@ -1,0 +1,4 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_tcc_familia_tcc_project_consejo,project.project,model_project_project,tcc_noticias.group_tcc_consejo,1,1,1,0
+access_tcc_familia_tcc_account_consejo,analytic.account.analytic.account,analytic.model_account_analytic_account,tcc_noticias.group_tcc_consejo,1,1,1,0
+access_tcc_project_tcc_mail_consejo,mail.thread,mail.model_mail_thread,tcc_noticias.group_tcc_consejo,1,1,1,0

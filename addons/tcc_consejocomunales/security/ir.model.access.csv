@@ -1,7 +1,0 @@
-id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
-access_tcc_consejocomunales_consejo,tcc_consejocomunales,model_tcc_consejocomunales,tcc_noticias.group_tcc_consejo,1,0,0,0
-access_res_partner_consejo,base.res.partner,model_res_partner,tcc_noticias.group_tcc_consejo,1,0,0,0
-access_tcc_consejocomunales_vocero,tcc_consejocomunales,model_tcc_consejocomunales,tcc_noticias.group_tcc_vocero,1,0,0,0
-access_tcc_res_partner_vocero,base.res.partner,model_res_partner,tcc_noticias.group_tcc_vocero,1,0,0,0
-access_tcc_consejocomunales_residente,tcc_consejocomunales,model_tcc_consejocomunales,tcc_noticias.group_tcc_residentes,1,0,0,0
-access_tcc_res_partner_residente,base.res.partner,model_res_partner,tcc_noticias.group_tcc_residentes,1,0,0,0

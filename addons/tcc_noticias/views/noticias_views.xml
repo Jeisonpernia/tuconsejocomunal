@@ -7,8 +7,9 @@
         <field name="type">form</field>
         <field name="arch" type="xml">
             <form string="Registro de la Noticia del Consejo Comunales">
+                <sheet>
                 <group>
-                    <field name="consejo_id" />
+                    <field name="consejo_id" options="{'no_create': True}"/>/>
                     <field name="titulo" />
                     <field name="subtitulo" />
                     <field name="categoria_id" />
@@ -17,6 +18,7 @@
                     <field name="cotenido" />
                     <field name="active" />
                 </group>
+                </sheet>
             </form>
         </field>
     </record>
@@ -48,7 +50,7 @@
     <menuitem 
         name="Gestión de Noticias" 
         id="tcc_noticias_vertical_menu" 
-        parent="tcc_consejocomunales.tcc_consejocomunal_horizontal_menu" 
+        parent="tcc_consejo_comunales.tcc_consejocomunal_horizontal_menu" 
         sequence="5"/>
         
     <menuitem 

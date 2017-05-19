@@ -21,12 +21,16 @@
     'version': '0.1',
 
     # any module necessary for this one to work correctly
-    'depends': ['base','tcc_consejocomunales','tcc_vivienda'],
+    'depends': ['base','tcc_consejo_comunales','tcc_vivienda'],
 
     # always loaded
     'data': [
-        # 'security/ir.model.access.csv',
-         'views/familias.xml',
+        
+        'views/familias.xml',
+        'security/group_tcc_consejo/ir.model.access.csv',
+        'security/group_tcc_residentes/ir.model.access.csv',
+        'security/group_tcc_vocero/ir.model.access.csv',
+        'security/filter_users_rule.xml',
          
          
     ],

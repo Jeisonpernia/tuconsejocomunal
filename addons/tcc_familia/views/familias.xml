@@ -9,7 +9,7 @@
                   <form string="familia">
 					  <sheet>
                      <group>
-					   <field name="consejocomunal_id" style="width:80%" />
+					   <field name="consejocomunal_id" style="width:80%" options="{'no_create': True}"/>
                        <field name="nombre" style="width:80%"  />
                        <field name="vivienda" style="width:80%"  />
                        <field name="tenencia" style="width:80%"  />
@@ -75,7 +75,7 @@
            
            <menuitem 
            name="Gestion de familia"
-           parent="tcc_consejocomunales.tcc_consejocomunal_horizontal_menu" 
+           parent="tcc_consejo_comunales.tcc_consejocomunal_horizontal_menu" 
            id="tcc_familia_horizontal_menu" 
            sequence="5" 
            />

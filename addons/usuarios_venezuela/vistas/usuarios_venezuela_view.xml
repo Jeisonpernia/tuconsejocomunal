@@ -8,8 +8,10 @@
         <field name="type">form</field>
         <field name="arch" type="xml">
             <field name="email" invisible="1" position="before">
+<!--
                 <label for="cedula" class="oe_edit_only" />
                 <h2><field name="cedula" select="1" /></h2>
+-->
                 <label for="telefono" class="oe_edit_only" />
                 <h2><field name="telefono" select="1" /></h2>
             </field>
